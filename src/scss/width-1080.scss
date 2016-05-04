@@ -1,35 +1,3 @@
-// body 
-// {
-// 	background:red; 
-// 	a 
-// 	{
-// 		color:black;
-// 	}
-// }
-
-$universal-left: 72px; 
-$blue: #2196F3;
-$grey-900: #212121;
-$grey-800: #424242;
-$grey-50: #FAFAFA;
-$vec-width:40px;
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,500,700,400);
-
-p, li, label, a
-{
-	text-align:justify; 
-	text-align-last:left;
-
-}
-::selection 
-{
-	color:#82B1FF;
-}
-::-moz-selection 
-{
-	color:#82B1FF;
-}
-
 html,
 body
 {
@@ -79,47 +47,36 @@ p
 }
 #logo 
 {
-	height:56px; 
-	top:72px; 
-	left:$universal-left; 
+	height:36; 
+	top:36px; 
+	left:$universal-left/2; 
 	position:absolute; 
 	z-index:10;
-	// opacity:.3;
 }
 [data-section="1"]
 {
 	// width:100%; 
-	position:relative;
-    height:auto !important; /* real browsers */
-    height:100%; /* IE6: treaded as min-height*/
-
-    min-height:100%; /* real browsers */
-    [content]
-    {
-    	display:flex;
-		flex-direction:column; 
-		align-items:center;
-		justify-content:center;
-    }
+	height:100%; 
 	flex-direction:column; 
 	align-items:center;
 	justify-content:center;
-	background:url("../images/radiologo.jpg");
 	background-size:cover;
 	.text-container
 	{
+		display:flex; 
+		flex-direction:column;
 		position:relative; 
 		z-index:10;
 		color:#ffffff;
 		h1 
 		{
-			max-width:720px;
+			max-width:auto;
 			font-weight:300;
 		}
 		.solutions 
 		{
 			display:flex; 
-			flex-direction:row;
+			flex-direction:column;
 			padding-top:$universal-left	* .5;
 			& > div
 			{
@@ -128,16 +85,17 @@ p
 				justify-content:center; 
 				align-items:center; 
 				border: 4px solid $blue;
-				padding:36px 72px; 
+				padding:18px 18px; 
 				&:last-of-type
 				{
-					margin-left:36px;
+					margin-top:18px;
+					margin-left:0px;
 				}
 				p
 				{
 					font-weight:300;
-					max-width:280px; 
-					letter-spacing:2px;
+					max-width:240px; 
+					letter-spacing:auto;
 					text-align:justify; 
 					text-align-last:left;
 					span
@@ -177,37 +135,12 @@ p
 		height:100%; 
 		width:100%; 
 		// background:rgba(33,33,33,.92);
-		background:url("../images/radiologo-2.jpg");
 		background-size:cover;
-		background-position:center center;
 		position:absolute; 
 		top:0; 
 		left:0;
 		// mix-blend-mode:multiply;
 		z-index:9;	
-	}
-	.down-arrow-tag
-	{
-		position:relative;
-		color:#e8e8e8; 
-		z-index:10;
-		z-index:100;
-		opacity:.66;
-		padding-top:36px;
-	}
-	.down-arrow
-	{
-		position:relative;
-		height:24px; 
-		width:24px; 
-		margin:8px;
-		border-radius:3px; 
-		border-left:solid 3px #e8e8e8; 
-		border-bottom:solid 3px #e8e8e8; 
-		// transform:rotateZ(-45deg);
-		// position:abolute;
-		// bottom:36px;
-		z-index:100;
 	}
 }
 [data-section="2"],
@@ -260,21 +193,13 @@ p
 		padding-top:$universal-left;	
 		padding-bottom:$universal-left;	
 		display:flex; 
-		flex-direction:row;
+		flex-direction:column;
 		flex-wrap:wrap;
-		max-width:1000px;
+		align-items:center; 
+		justify-content:center;
+		max-width:100%;
 		.info-box
 		{
-			&:nth-of-type(1n)
-			{
-				margin-right:$universal-left; 
-				margin-bottom:$universal-left; 
-			}		
-			&:nth-of-type(2n)
-			{
-				margin-right:0; 
-				margin-bottom:$universal-left; 
-			}		
 			display:flex;
 			flex-direction:column;
 			align-items:stretch;
@@ -282,9 +207,19 @@ p
 			align-content:space-between;
 			flex-shrink:0;
 			position:relative;
-			width:364px;
-			padding:36px;
+			width:80%;
+			padding:18px;
 			border:1px solid #E0E0E0;
+			&:nth-of-type(1n)
+			{
+				margin-right:0; 
+				margin-bottom:18px; 
+			}		
+			&:nth-of-type(2n)
+			{
+				margin-right:0; 
+				margin-bottom:18px; 
+			}		
 			.gradient
 			{
 				position:absolute; 
@@ -298,7 +233,7 @@ p
 			{
 				font-weight:400;
 				color:$grey-800;
-				max-width:280px;
+				max-width:100%;
 				text-transform: uppercase;
 				opacity:.86;
 			}
@@ -359,10 +294,6 @@ p
 	h1
 	{
 		width:320px;
-		&:last-child 
-		{
-			color:#3D5AFE;
-		}
 	}
 	.grid-container 
 	{
@@ -370,7 +301,7 @@ p
 		{
 			&:last-child
 			{
-				cursor:pointer;
+				height:200px;
 			}
 			h5:last-child
 			{
@@ -384,22 +315,18 @@ p
 			}
 		}
 	}
-	#tutorial
-	{
-		z-index:5;
-	}
 	.video-overlay
 	{
 		height:100%; 
 		width:100%; 
 		// background:rgba(33,33,33,.5);
-		background:url("../images/desk.jpeg");
+		// background:url("../images/desk.jpeg");
 		background-size:cover;
 		position:absolute; 
 		top:0; 
 		left:0;
 		// mix-blend-mode:multiply;
-		z-index:10;	
+		z-index:9;	
 		.opacity-overlay
 		{
 			background:rgba(33,33,33,.5);
@@ -494,58 +421,9 @@ p
 }
 footer 
 {
-	display:flex;
-	flex-direction:row; 
-	align-items:space-between;
-	justify-content:space-between;
-	height:auto;
 	padding-left:$universal-left;
 	padding-top:$universal-left;
 	padding-bottom:$universal-left;
 	background:#F5F5F5;
 	color:#757575;
-	div:nth-of-type(2) 
-	{
-		padding-right:24px;
-		color:#2196F3;
-	}	
-	a 
-	{
-		color:#2196F3;
-		label
-		{
-			color:#757575;
-			font-size:18px;
-			cursor:pointer;
-		}
-	}
-}
-@media screen and (max-width:1200px)
-{
-	h1{ font-size:48px; }
-	h2{ font-size:36px; }
-	h3{ font-size:24px; }
-	h4{ font-size:21px; }
-	h5{ font-size:18px; }
-	h6{ font-size:18px; }
-	p { font-size:24px; }
-	a { font-size:24px; }
-	ul { font-size:18px; }
-	li { font-size:18px; }
-}
-@media screen and (max-width:1080px)
-{
-	@import 'width-1080'
-}
-@media screen and (max-width:920px)
-{
-	@import 'width-720'
-}
-@media screen and (max-width:480px)
-{
-	@import 'width-480'
-}
-@media screen and (max-height:600px)
-{
-	@import 'height-600'
 }

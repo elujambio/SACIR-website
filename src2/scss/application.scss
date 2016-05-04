@@ -14,13 +14,6 @@ $grey-800: #424242;
 $grey-50: #FAFAFA;
 $vec-width:40px;
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,500,700,400);
-
-p, li, label, a
-{
-	text-align:justify; 
-	text-align-last:left;
-
-}
 ::selection 
 {
 	color:#82B1FF;
@@ -79,7 +72,7 @@ p
 }
 #logo 
 {
-	height:56px; 
+	height:48px; 
 	top:72px; 
 	left:$universal-left; 
 	position:absolute; 
@@ -89,22 +82,11 @@ p
 [data-section="1"]
 {
 	// width:100%; 
-	position:relative;
-    height:auto !important; /* real browsers */
-    height:100%; /* IE6: treaded as min-height*/
-
-    min-height:100%; /* real browsers */
-    [content]
-    {
-    	display:flex;
-		flex-direction:column; 
-		align-items:center;
-		justify-content:center;
-    }
+	height:100%; 
 	flex-direction:column; 
 	align-items:center;
 	justify-content:center;
-	background:url("../images/radiologo.jpg");
+	background:url("../images/desk.jpeg");
 	background-size:cover;
 	.text-container
 	{
@@ -177,37 +159,13 @@ p
 		height:100%; 
 		width:100%; 
 		// background:rgba(33,33,33,.92);
-		background:url("../images/radiologo-2.jpg");
+		background:url("../images/desk.jpeg");
 		background-size:cover;
-		background-position:center center;
 		position:absolute; 
 		top:0; 
 		left:0;
 		// mix-blend-mode:multiply;
 		z-index:9;	
-	}
-	.down-arrow-tag
-	{
-		position:relative;
-		color:#e8e8e8; 
-		z-index:10;
-		z-index:100;
-		opacity:.66;
-		padding-top:36px;
-	}
-	.down-arrow
-	{
-		position:relative;
-		height:24px; 
-		width:24px; 
-		margin:8px;
-		border-radius:3px; 
-		border-left:solid 3px #e8e8e8; 
-		border-bottom:solid 3px #e8e8e8; 
-		// transform:rotateZ(-45deg);
-		// position:abolute;
-		// bottom:36px;
-		z-index:100;
 	}
 }
 [data-section="2"],
@@ -368,10 +326,6 @@ p
 	{
 		.info-box
 		{
-			&:last-child
-			{
-				cursor:pointer;
-			}
 			h5:last-child
 			{
 				padding-top:24px;
@@ -494,29 +448,17 @@ p
 }
 footer 
 {
-	display:flex;
-	flex-direction:row; 
-	align-items:space-between;
-	justify-content:space-between;
-	height:auto;
 	padding-left:$universal-left;
 	padding-top:$universal-left;
 	padding-bottom:$universal-left;
 	background:#F5F5F5;
 	color:#757575;
-	div:nth-of-type(2) 
-	{
-		padding-right:24px;
-		color:#2196F3;
-	}	
 	a 
 	{
-		color:#2196F3;
+		color:#757575;
 		label
 		{
-			color:#757575;
 			font-size:18px;
-			cursor:pointer;
 		}
 	}
 }
@@ -537,15 +479,11 @@ footer
 {
 	@import 'width-1080'
 }
-@media screen and (max-width:920px)
+@media screen and (max-width:720px)
 {
 	@import 'width-720'
 }
 @media screen and (max-width:480px)
 {
 	@import 'width-480'
-}
-@media screen and (max-height:600px)
-{
-	@import 'height-600'
 }
