@@ -53,41 +53,7 @@ function onPlayerStateChange(event) {
 // function startVideo() {
 // 	player.playVideo();
 // }
-$("#close-video").click(
-	function () {
-	$("[data-section=1] .text-container")
-			.velocity({ opacity: 1 },{ duration: 300 });
-		$("#video-overlay")
-			.velocity({ opacity: 1 },{ duration: 300 });
 
-		$("[data-section=1] .text-container")
-			.css("pointer-events", "all");
-		$("#video-overlay")
-			.css("pointer-events", "all");
-		$("#video")
-			.css("pointer-events", "none");
-		$(".down-arrow-tag")
-			.velocity({ opacity: 1 },{ duration: 300 
-				, complete: function () {
-					$(".down-arrow-tag")
-						.css("pointer-events", "all")
-						.css("visibility", "visible");
-				}});
-		$(".down-arrow")
-			.velocity({ opacity: 1 },{ duration: 300
-				, complete: function () {
-					$(".down-arrow")
-						.css("pointer-events", "all")
-						.css("visibility", "visible");
-				} });
-		
-		$("#close-video")
-			.css("pointer-events", "none")
-			.velocity({ opacity: 0 },{ duration: 300 });
-
-		video.pauseVideo();		
-	}
-);
 $("#view-video").click(
 	function () {
 		// player.playVideo();
@@ -102,26 +68,8 @@ $("#view-video").click(
 			.css("pointer-events", "none");
 		$("#video")
 			.css("pointer-events", "all");
-		$(".down-arrow-tag")
-			.velocity({ opacity: 0 },{ duration: 300 
-				, complete: function () {
-					$(".down-arrow-tag")
-						.css("pointer-events", "none")
-						.css("visibility", "hidden");
-				}});
-		$(".down-arrow")
-			.velocity({ opacity: 0 },{ duration: 300
-				, complete: function () {
-					$(".down-arrow")
-						.css("pointer-events", "none")
-						.css("visibility", "hidden");
-				} });
-		
-		$("#close-video")
-			.css("pointer-events", "all")
-			.velocity({ opacity: 1 },{ duration: 300 });
 
-		video.playVideo();
+		// video.playVideo();
 	}
 );
 
@@ -137,9 +85,9 @@ $(".video-overlay").click(
 			// .css("pointer-events", "none");
 		$(".video-overlay")
 			.css("pointer-events", "none");
-		$("#tutorial")
+		$("tutorial")
 			.css("pointer-events", "all");
 
-		video2.playVideo();
+		// video2.playVideo();
 	}
 );

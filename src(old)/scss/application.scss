@@ -1,3 +1,28 @@
+// body 
+// {
+// 	background:red; 
+// 	a 
+// 	{
+// 		color:black;
+// 	}
+// }
+
+$universal-left: 72px; 
+$blue: #2196F3;
+$grey-900: #212121;
+$grey-800: #424242;
+$grey-50: #FAFAFA;
+$vec-width:40px;
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,500,700,400);
+::selection 
+{
+	color:#82B1FF;
+}
+::-moz-selection 
+{
+	color:#82B1FF;
+}
+
 html,
 body
 {
@@ -47,11 +72,12 @@ p
 }
 #logo 
 {
-	height:56px; 
-	top:36px; 
-	left:$universal-left/2; 
+	height:48px; 
+	top:72px; 
+	left:$universal-left; 
 	position:absolute; 
 	z-index:10;
+	// opacity:.3;
 }
 [data-section="1"]
 {
@@ -60,23 +86,22 @@ p
 	flex-direction:column; 
 	align-items:center;
 	justify-content:center;
+	background:url("../images/desk.jpeg");
 	background-size:cover;
 	.text-container
 	{
-		display:flex; 
-		flex-direction:column;
 		position:relative; 
 		z-index:10;
 		color:#ffffff;
 		h1 
 		{
-			max-width:auto;
+			max-width:720px;
 			font-weight:300;
 		}
 		.solutions 
 		{
 			display:flex; 
-			flex-direction:column;
+			flex-direction:row;
 			padding-top:$universal-left	* .5;
 			& > div
 			{
@@ -85,17 +110,16 @@ p
 				justify-content:center; 
 				align-items:center; 
 				border: 4px solid $blue;
-				padding:18px 18px; 
+				padding:36px 72px; 
 				&:last-of-type
 				{
-					margin-top:18px;
-					margin-left:0px;
+					margin-left:36px;
 				}
 				p
 				{
 					font-weight:300;
-					max-width:240px; 
-					letter-spacing:auto;
+					max-width:280px; 
+					letter-spacing:2px;
 					text-align:justify; 
 					text-align-last:left;
 					span
@@ -135,6 +159,7 @@ p
 		height:100%; 
 		width:100%; 
 		// background:rgba(33,33,33,.92);
+		background:url("../images/desk.jpeg");
 		background-size:cover;
 		position:absolute; 
 		top:0; 
@@ -193,13 +218,21 @@ p
 		padding-top:$universal-left;	
 		padding-bottom:$universal-left;	
 		display:flex; 
-		flex-direction:column;
+		flex-direction:row;
 		flex-wrap:wrap;
-		align-items:center; 
-		justify-content:center;
-		max-width:100%;
+		max-width:1000px;
 		.info-box
 		{
+			&:nth-of-type(1n)
+			{
+				margin-right:$universal-left; 
+				margin-bottom:$universal-left; 
+			}		
+			&:nth-of-type(2n)
+			{
+				margin-right:0; 
+				margin-bottom:$universal-left; 
+			}		
 			display:flex;
 			flex-direction:column;
 			align-items:stretch;
@@ -207,19 +240,9 @@ p
 			align-content:space-between;
 			flex-shrink:0;
 			position:relative;
-			width:80%;
-			padding:18px;
+			width:364px;
+			padding:36px;
 			border:1px solid #E0E0E0;
-			&:nth-of-type(1n)
-			{
-				margin-right:0; 
-				margin-bottom:18px; 
-			}		
-			&:nth-of-type(2n)
-			{
-				margin-right:0; 
-				margin-bottom:18px; 
-			}		
 			.gradient
 			{
 				position:absolute; 
@@ -233,7 +256,7 @@ p
 			{
 				font-weight:400;
 				color:$grey-800;
-				max-width:100%;
+				max-width:280px;
 				text-transform: uppercase;
 				opacity:.86;
 			}
@@ -270,7 +293,6 @@ p
 			li
 			{
 				padding-bottom:12px;
-				max-width:300px;
 			}
 		}
 		p
@@ -295,15 +317,15 @@ p
 	h1
 	{
 		width:320px;
+		&:last-child 
+		{
+			color:#3D5AFE;
+		}
 	}
 	.grid-container 
 	{
 		.info-box
 		{
-			&:last-child
-			{
-				height:200px;
-			}
 			h5:last-child
 			{
 				padding-top:24px;
@@ -316,18 +338,22 @@ p
 			}
 		}
 	}
+	#tutorial
+	{
+		z-index:5;
+	}
 	.video-overlay
 	{
 		height:100%; 
 		width:100%; 
 		// background:rgba(33,33,33,.5);
-		// background:url("../images/desk.jpeg");
+		background:url("../images/desk.jpeg");
 		background-size:cover;
 		position:absolute; 
 		top:0; 
 		left:0;
 		// mix-blend-mode:multiply;
-		z-index:9;	
+		z-index:10;	
 		.opacity-overlay
 		{
 			background:rgba(33,33,33,.5);
@@ -427,4 +453,37 @@ footer
 	padding-bottom:$universal-left;
 	background:#F5F5F5;
 	color:#757575;
+	a 
+	{
+		color:#757575;
+		label
+		{
+			font-size:18px;
+		}
+	}
+}
+@media screen and (max-width:1200px)
+{
+	h1{ font-size:48px; }
+	h2{ font-size:36px; }
+	h3{ font-size:24px; }
+	h4{ font-size:21px; }
+	h5{ font-size:18px; }
+	h6{ font-size:18px; }
+	p { font-size:24px; }
+	a { font-size:24px; }
+	ul { font-size:18px; }
+	li { font-size:18px; }
+}
+@media screen and (max-width:1080px)
+{
+	@import 'width-1080'
+}
+@media screen and (max-width:720px)
+{
+	@import 'width-720'
+}
+@media screen and (max-width:480px)
+{
+	@import 'width-480'
 }

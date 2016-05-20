@@ -47,11 +47,12 @@ p
 }
 #logo 
 {
-	height:56px; 
+	height:36; 
 	top:36px; 
 	left:$universal-left/2; 
 	position:absolute; 
 	z-index:10;
+	opacity:.3;
 }
 [data-section="1"]
 {
@@ -60,6 +61,7 @@ p
 	flex-direction:column; 
 	align-items:center;
 	justify-content:center;
+	background:url("../images/desk.jpeg");
 	background-size:cover;
 	.text-container
 	{
@@ -135,6 +137,7 @@ p
 		height:100%; 
 		width:100%; 
 		// background:rgba(33,33,33,.92);
+		background:url("../images/desk.jpeg");
 		background-size:cover;
 		position:absolute; 
 		top:0; 
@@ -270,7 +273,6 @@ p
 			li
 			{
 				padding-bottom:12px;
-				max-width:300px;
 			}
 		}
 		p

@@ -523,23 +523,15 @@
 			"file": "src/index.html",
 			"settings":
 			{
-				"buffer_size": 8660,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/scss/application.scss",
-			"settings":
-			{
-				"buffer_size": 8881,
+				"buffer_size": 9284,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/scss/height-600.scss",
+			"file": "src/javascripts/video.js",
 			"settings":
 			{
-				"buffer_size": 82,
+				"buffer_size": 3802,
 				"line_ending": "Windows"
 			}
 		},
@@ -552,26 +544,18 @@
 			}
 		},
 		{
+			"file": "src/scss/application.scss",
+			"settings":
+			{
+				"buffer_size": 9532,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "src/scss/width-1080.scss",
 			"settings":
 			{
-				"buffer_size": 6880,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/scss/width-480.scss",
-			"settings":
-			{
-				"buffer_size": 828,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/javascripts/application.js",
-			"settings":
-			{
-				"buffer_size": 313,
+				"buffer_size": 6903,
 				"line_ending": "Windows"
 			}
 		}
@@ -638,19 +622,22 @@
 		"/C/Users/PabloEugenio/Documents/GitHub/eDictado - SIIS",
 		"/C/Users/PabloEugenio/Documents/GitHub/eDictado - SIIS/src",
 		"/C/Users/PabloEugenio/Documents/GitHub/eDictado - SIIS/src/fonts",
-		"/C/Users/PabloEugenio/Documents/GitHub/eDictado - SIIS/src/images",
-		"/C/Users/PabloEugenio/Documents/GitHub/eDictado - SIIS/src/javascripts",
 		"/C/Users/PabloEugenio/Documents/GitHub/eDictado - SIIS/src/scss",
 		"/C/Users/PabloEugenio/Documents/GitHub/eDictado - SIIS/src/stylesheets"
 	],
 	"file_history":
 	[
-		"/C/Users/PabloEugenio/Documents/GitHub/eDictado - SIIS/src/stylesheets/normalize.css",
-		"/C/Users/PabloEugenio/Documents/GitHub/eDictado - SIIS/src/scss/width-1080.scss",
-		"/C/Users/PabloEugenio/Documents/GitHub/eDictado - SIIS/src/javascripts/video.js",
-		"/C/Users/PabloEugenio/Documents/GitHub/eDictado - SIIS/src/scss/width-720.scss",
-		"/C/Users/PabloEugenio/Documents/GitHub/eDictado - SIIS/src/scss/width-480.scss",
+		"/C/Users/PabloEugenio/Documents/GitHub/eDictado - SIIS/src/images/arrow-right-2.svg",
+		"/C/Users/PabloEugenio/Documents/GitHub/eDictado - SIIS/src/javascripts/application.js",
 		"/C/Users/PabloEugenio/Documents/GitHub/eDictado - SIIS/src/scss/application.scss",
+		"/C/Users/PabloEugenio/Documents/GitHub/eDictado - SIIS/src/scss/height-600.scss",
+		"/C/Users/PabloEugenio/Documents/GitHub/eDictado - SIIS/src/images/payment.svg",
+		"/C/Users/PabloEugenio/Documents/GitHub/eDictado - SIIS/src/index.html",
+		"/C/Users/PabloEugenio/Documents/GitHub/eDictado - SIIS/src/scss/width-480.scss",
+		"/C/Users/PabloEugenio/Documents/GitHub/eDictado - SIIS/src/scss/width-1080.scss",
+		"/C/Users/PabloEugenio/Documents/GitHub/eDictado - SIIS/src/scss/width-720.scss",
+		"/C/Users/PabloEugenio/Documents/GitHub/eDictado - SIIS/src/stylesheets/normalize.css",
+		"/C/Users/PabloEugenio/Documents/GitHub/eDictado - SIIS/src/javascripts/video.js",
 		"/C/Users/PabloEugenio/Documents/GitHub/eDictado - SIIS/src/images/sacir-logo.svg",
 		"/C/Users/PabloEugenio/Documents/GitHub/eDictado - SIIS/src/javascripts/video-2.js",
 		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/views/general_templates/new.html.erb",
@@ -767,16 +754,11 @@
 		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/views/doctors/show.html.erb",
 		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/javascripts/velocity.js",
 		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/base/normalize.scss",
-		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/main.scss",
-		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/models/doctor_picture.rb",
-		"/C/Users/PabloEugenio/Documents/GitHub/glitch/app/views/blogs/show.html.erb",
-		"/C/Users/PabloEugenio/Documents/GitHub/glitch/app/assets/stylesheets/article-excerpt.scss",
-		"/C/Users/PabloEugenio/Documents/GitHub/glitch/app/assets/stylesheets/application.css",
-		"/C/Users/PabloEugenio/Documents/GitHub/glitch/app/assets/stylesheets/main.scss"
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/main.scss"
 	],
 	"find":
 	{
-		"height": 33.0
+		"height": 71.0
 	},
 	"find_in_files":
 	{
@@ -828,6 +810,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"data-section",
+			"none",
+			"\"\");",
+			"opacity: 0",
+			"0",
+			"id=\"view-video",
+			"id=\"video-overlay",
+			"label",
+			"form",
 			"48",
 			"white",
 			"p",
@@ -946,16 +937,7 @@
 			"p",
 			"h1",
 			"h5",
-			"label",
-			"#gly",
-			"glyo",
-			"fifth",
-			"%;	",
-			"fourth",
-			"section\"",
-			"mark",
-			"filter",
-			"\"portfolio-image-container\""
+			"label"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1110,15 +1092,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8660,
+						"buffer_size": 9284,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6671,
-								6671
+								7292,
+								7292
 							]
 						],
 						"settings":
@@ -1128,7 +1110,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 6084.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -1137,72 +1119,41 @@
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 1,
-					"file": "src/scss/application.scss",
+					"file": "src/javascripts/video.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8881,
+						"buffer_size": 3802,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								272,
-								272
+								110,
+								109
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "src/scss/height-600.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 82,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								51,
-								51
-							],
-							[
-								74,
-								74
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "src/scss/width-720.scss",
 					"semi_transient": false,
 					"settings":
@@ -1214,8 +1165,8 @@
 						"selection":
 						[
 							[
-								748,
-								748
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1224,10 +1175,39 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 858.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/scss/application.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9532,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1008,
+								1008
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 1568.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1236,15 +1216,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6880,
+						"buffer_size": 6903,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1931,
-								1931
+								541,
+								541
 							]
 						],
 						"settings":
@@ -1253,67 +1233,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 7878.0,
+						"translation.y": 780.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "src/scss/width-480.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 828,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								575,
-								575
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "src/javascripts/application.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 313,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								276,
-								276
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
 					"type": "text"
 				}
 			]
