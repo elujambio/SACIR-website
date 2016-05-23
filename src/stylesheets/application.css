@@ -401,6 +401,9 @@ footer {
   padding-bottom: 72px;
   background: #F5F5F5;
   color: #757575; }
+  footer div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column; }
   footer div:nth-of-type(2) {
     padding-right: 24px;
     color: #2196F3; }
