@@ -1,4 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,500,700,400);
+p, li, label, a {
+  text-align: justify;
+  text-align-last: left; }
+
 ::selection {
   color: #82B1FF; }
 
@@ -40,26 +44,39 @@ p {
   width: auto; }
 
 #logo {
-  height: 48px;
+  height: 56px;
   top: 72px;
   left: 72px;
   position: absolute;
   z-index: 10; }
 
 [data-section="1"] {
+  position: relative;
+  height: auto !important;
+  /* real browsers */
   height: 100%;
+  /* IE6: treaded as min-height*/
+  min-height: 100%;
+  /* real browsers */
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url("../images/desk.jpeg");
+  background: url("../images/radiologo-2.jpg");
   background-size: cover; }
+  [data-section="1"] [content] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
   [data-section="1"] .text-container {
     position: relative;
     z-index: 10;
     color: #ffffff; }
     [data-section="1"] .text-container h1 {
       max-width: 720px;
-      font-weight: 300; }
+      font-weight: 300;
+      padding-top: 144px;
+      font-size: 48px; }
     [data-section="1"] .text-container .solutions {
       display: flex;
       flex-direction: row;
@@ -98,15 +115,52 @@ p {
     left: 0;
     pointer-events: none;
     z-index: 8; }
+  [data-section="1"] #close-video {
+    position: absolute;
+    bottom: 72px;
+    left: 72px;
+    z-index: 100;
+    height: 24px;
+    width: 24px;
+    opacity: 0;
+    pointer-events: none; }
+    [data-section="1"] #close-video div {
+      height: 2px;
+      width: 100%;
+      background: white;
+      position: absolute; }
+    [data-section="1"] #close-video div:first-child {
+      top: 10px;
+      transform: rotateZ(-45deg); }
+    [data-section="1"] #close-video div:last-child {
+      top: 10px;
+      transform: rotateZ(45deg); }
   [data-section="1"] #video-overlay {
     height: 100%;
     width: 100%;
-    background: url("../images/desk.jpeg");
+    background: url("../images/radiologo-2.jpg");
     background-size: cover;
+    background-position: center center;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 9; }
+  [data-section="1"] .down-arrow-tag {
+    position: relative;
+    color: #e8e8e8;
+    z-index: 10;
+    z-index: 100;
+    opacity: .66;
+    padding-top: 24px; }
+  [data-section="1"] .down-arrow {
+    position: relative;
+    height: 24px;
+    width: 24px;
+    margin: 8px;
+    border-radius: 3px;
+    border-left: solid 3px #e8e8e8;
+    border-bottom: solid 3px #e8e8e8;
+    z-index: 100; }
 
 [data-section="2"],
 [data-section="5"] {
@@ -132,6 +186,28 @@ p {
         width: auto; }
     [data-section="2"] .text-container p,
     [data-section="5"] .text-container p {
+      padding-top: 36px;
+      color: #ffffff;
+      max-width: 720px; }
+
+[data-section="4"] {
+  background: linear-gradient(45deg, #6e7682 0%, #0d47a1 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  [data-section="4"] .text-container {
+    padding-top: 72px;
+    padding-bottom: 72px; }
+    [data-section="4"] .text-container > div {
+      display: flex;
+      flex-direction: row; }
+      [data-section="4"] .text-container > div img {
+        padding-left: 24px; }
+      [data-section="4"] .text-container > div h1 {
+        color: #ffffff;
+        width: auto; }
+    [data-section="4"] .text-container p {
       padding-top: 36px;
       color: #ffffff;
       max-width: 720px; }
@@ -207,20 +283,25 @@ p {
         font-size: 18px;
         opacity: .86; }
 
-[data-section="6"] {
+[data-section="6"],
+[data-section="4.6"] {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-top: 72px;
   padding-bottom: 72px; }
-  [data-section="6"] .text-container ul {
+  [data-section="6"] .text-container ul,
+  [data-section="4.6"] .text-container ul {
     padding-top: 36px;
     color: #424242;
     opacity: .86; }
-    [data-section="6"] .text-container ul li {
-      padding-bottom: 12px; }
-  [data-section="6"] .text-container p {
+    [data-section="6"] .text-container ul li,
+    [data-section="4.6"] .text-container ul li {
+      padding-bottom: 36px;
+      max-width: 600px; }
+  [data-section="6"] .text-container p,
+  [data-section="4.6"] .text-container p {
     font-weight: 400;
     color: #424242;
     max-width: 720px;
@@ -238,7 +319,14 @@ p {
   [data-section="7"] h1 {
     width: 320px; }
     [data-section="7"] h1:last-child {
-      color: #3D5AFE; }
+      color: #3D5AFE;
+      width: auto;
+      max-width: 100%; }
+    [data-section="7"] h1 img {
+      width: 72px;
+      margin-right: 24px; }
+  [data-section="7"] .grid-container .info-box:last-child {
+    cursor: pointer; }
   [data-section="7"] .grid-container .info-box h5:last-child {
     padding-top: 24px;
     font-weight: 700; }
@@ -309,9 +397,13 @@ p {
       margin-bottom: 12px;
       padding: 4px;
       background: linear-gradient(45deg, #2196f3 0%, #0d47a1 100%); }
+    [data-section="8"] form textarea {
+      resize: none;
+      height: 150px; }
     [data-section="8"] form input[type="text"],
     [data-section="8"] form input[type="tel"],
-    [data-section="8"] form input[type="email"] {
+    [data-section="8"] form input[type="email"],
+    [data-section="8"] form textarea {
       text-transform: uppercase;
       padding: 18px;
       background: #ffffff;
@@ -325,15 +417,28 @@ p {
       width: 100%; }
 
 footer {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  justify-content: space-between;
+  height: auto;
   padding-left: 72px;
   padding-top: 72px;
   padding-bottom: 72px;
   background: #F5F5F5;
   color: #757575; }
+  footer div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column; }
+  footer div:nth-of-type(2) {
+    padding-right: 24px;
+    color: #2196F3; }
   footer a {
-    color: #757575; }
+    color: #2196F3; }
     footer a label {
-      font-size: 18px; }
+      color: #757575;
+      font-size: 18px;
+      cursor: pointer; }
 
 @media screen and (max-width: 1200px) {
   h1 {
@@ -401,19 +506,17 @@ footer {
     width: auto; }
 
   #logo {
-    height: 36;
+    height: 56px;
     top: 36px;
     left: 36px;
     position: absolute;
-    z-index: 10;
-    opacity: .3; }
+    z-index: 10; }
 
   [data-section="1"] {
     height: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url("../images/desk.jpeg");
     background-size: cover; }
     [data-section="1"] .text-container {
       display: flex;
@@ -466,7 +569,6 @@ footer {
     [data-section="1"] #video-overlay {
       height: 100%;
       width: 100%;
-      background: url("../images/desk.jpeg");
       background-size: cover;
       position: absolute;
       top: 0;
@@ -586,7 +688,8 @@ footer {
       color: #424242;
       opacity: .86; }
       [data-section="6"] .text-container ul li {
-        padding-bottom: 12px; }
+        padding-bottom: 12px;
+        max-width: 300px; }
     [data-section="6"] .text-container p {
       font-weight: 400;
       color: #424242;
@@ -694,7 +797,7 @@ footer {
     padding-bottom: 72px;
     background: #F5F5F5;
     color: #757575; } }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 920px) {
   html,
   body {
     width: 100%; }
@@ -709,6 +812,9 @@ footer {
   p {
     font-size: 19px !important; }
 
+  li {
+    max-width: 280px; }
+
   [data-section="2"] .text-container > div {
     flex-direction: column;
     align-items: flex-start; }
@@ -722,12 +828,24 @@ footer {
       width: 300px; }
 
   footer {
-    width: 100%;
-    padding: 0 0; }
-    footer p {
-      width: 100%;
-      padding: 18px;
-      margin: 0 0; } }
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+    height: auto;
+    padding-left: 72px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background: #F5F5F5;
+    color: #757575; }
+    footer div:nth-of-type(2) {
+      padding-right: 24px;
+      padding-top: 24px; }
+    footer a {
+      color: #757575; }
+      footer a label {
+        font-size: 18px;
+        max-width: 320px; } }
 @media screen and (max-width: 480px) {
   html,
   body {
@@ -757,8 +875,14 @@ footer {
       width: 300px; }
 
   footer {
-    width: 100%;
-    padding: 0 0; }
+    padding-left: 0; }
+    footer div:nth-of-type(2) {
+      padding-right: 0px;
+      padding-left: 24px;
+      padding-top: 24px; }
+      footer div:nth-of-type(2) label {
+        margin: 0 0 !important;
+        padding: 0 0 !important; }
     footer p,
     footer label {
       width: 100%;
@@ -773,5 +897,11 @@ footer {
 
   #view-video {
     padding-top: 12px !important; } }
+@media screen and (max-height: 600px) {
+  [data-section="1"] [content] {
+    padding-top: 72px;
+    padding-bottom: 72px; }
+    [data-section="1"] [content] h1 {
+      padding-top: 36px; } }
 
 /*# sourceMappingURL=application.css.map */
